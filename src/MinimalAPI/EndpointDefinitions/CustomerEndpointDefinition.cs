@@ -3,7 +3,7 @@ using MinimalAPI.Models;
 using MinimalAPI.Repositories;
 using MinimalAPI.SecrecetSauce;
 
-namespace MinimalAPI.EndpointsDefinitions
+namespace MinimalAPI.EndpointDefinitions
 {
     public class CustomerEndpointDefinition : IEndpointDefinition
     {

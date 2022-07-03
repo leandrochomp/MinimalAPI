@@ -1,7 +1,7 @@
 ﻿using Microsoft.OpenApi.Models;
 using MinimalAPI.SecrecetSauce;
 
-namespace MinimalAPI.EndpointsDefinitions
+namespace MinimalAPI.EndpointDefinitions
 {
     public class SwaggerEndpointDefinition : IEndpointDefinition
     {
