@@ -2,7 +2,15 @@
 
 namespace MinimalAPI.Repositories
 {
-    internal class CustomerRepository
+    interface ICustomerRepository
+    {
+        void Create(Customer customer);
+        Customer GetById(Guid id);
+        List<Customer> GetAll();
+        void Update(Customer customer);
+        void Delete(Guid id);
+    }
+    internal class CustomerRepository : ICustomerRepository
     {
         private readonly Dictionary<Guid, Customer> _customers = new();
 
