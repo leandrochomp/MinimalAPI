@@ -1,2 +1,2 @@
 # MinimalAPI
-MinimalAPI built in NET 6 using TDD, Docker, and Swagger
+MinimalAPI built in NET 6 using Docker and Swagger
