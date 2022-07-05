@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  minimal.api:
+    image: ${DOCKER_REGISTRY-}minimal-api
+    build:
+      context: .
+      dockerfile: src/MinimalAPI/Dockerfile
+    container_name: minimal-api

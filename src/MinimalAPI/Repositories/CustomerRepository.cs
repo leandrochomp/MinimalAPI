@@ -10,26 +10,23 @@ namespace MinimalAPI.Repositories
         void Update(Customer customer);
         void Delete(Guid id);
     }
-    internal class CustomerRepository : ICustomerRepository
+    class CustomerRepository : ICustomerRepository
     {
         private readonly Dictionary<Guid, Customer> _customers = new();
 
         public void Create(Customer customer)
         {
-            if (customer is null) return;
+            if (customer is null)
+            {
+                return;
+            }
 
             _customers[customer.Id] = customer;
         }
 
-        public Customer GetById(Guid id)
-        {
-            return _customers[id];
-        }
+        public Customer GetById(Guid id) => _customers[id];
 
-        public List<Customer> GetAll()
-        {
-            return _customers.Values.ToList();
-        }
+        public List<Customer> GetAll() => _customers.Values.ToList();
 
         public void Update(Customer customer)
         {
@@ -39,9 +36,6 @@ namespace MinimalAPI.Repositories
             _customers[customer.Id] = customer;
         }
 
-        public void Delete(Guid id)
-        {
-            _customers.Remove(id);
-        }
+        public void Delete(Guid id) => _customers.Remove(id);
     }
 }

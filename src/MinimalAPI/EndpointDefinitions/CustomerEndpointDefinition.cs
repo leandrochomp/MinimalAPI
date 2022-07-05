@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MinimalAPI.Models;
+﻿using MinimalAPI.Models;
 using MinimalAPI.Repositories;
 using MinimalAPI.SecrecetSauce;
 

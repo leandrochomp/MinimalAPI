@@ -9,4 +9,4 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 app.UseEndpointDefinitions();
 
-app.Run();
+await app.RunAsync();

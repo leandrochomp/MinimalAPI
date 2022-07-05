@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Minimal API": {
+      "commandName": "DockerCompose",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "minimal.api",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "minimal.api": "StartDebugging"
+      }
+    }
+  }
+}
